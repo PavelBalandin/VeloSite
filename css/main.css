@@ -29,9 +29,10 @@ justify-content: center;
 .containert2{
 	width: 50%;
 	background-color: #F5F5F5;
+	padding-bottom: 30px;
 }
 
-
+/*==================Header==================*/
 .logo{
 	display: flex;
 	justify-content: flex-start;
@@ -65,6 +66,7 @@ nav{
 	font-size: 24px;
 }
 
+/*==================News block==================*/
 .cards{
 	display: flex;
 	align-items: center;
@@ -113,7 +115,8 @@ nav{
 .card-text-time{
 	font-size: 14px;
 	padding:0 10px;
-	color: #212529;
+	color: #5e5e5e;
+	margin-top: 0;
 }
 
 .btn-primary{
@@ -131,6 +134,83 @@ nav{
 	font-size: 16px;
 }
 
+/*==================Footer==================*/
 footer{
-	
+	display: flex;
+	justify-content: center;
+	height: 70px;
+}
+
+.containert3{
+	width: 50%;
+	background-color: white;
+}
+
+.containert3 hr{
+	padding: 0;
+	margin:0;
+}
+
+.containert3 nav ul li a{
+	color: lightgrey;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.containert3 nav{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+/*=======================About Us=======================*/
+
+.aboutauthor{
+	display: flex;
+	justify-content: center;
+}
+
+.aboutauthor img{
+	width: 50%;
+	padding: 0;
+	margin: 0;
+}
+
+.maincontent{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	display: flex;
+	padding:10px;
+	margin: 0;
+}
+
+.maincontent p{
+	width: 100%;
+	margin:0px;
+	padding-left: 10px;
+	font-size: 16px;
+	color: #212529;
+	text-align: justify;
+}
+
+/*=======================ArticlePage=======================*/
+
+.mainarticle{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	display: flex;
+	justify-content: center;
+}
+
+.mainarticle .containert2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.mainarticle img{
+	width: 100%;
+}
+
+.mainarticle .card-text p{
+	margin:0 0 10px 0;
 }
