@@ -120,6 +120,8 @@ nav{
 }
 
 .btn-primary{
+	border: none; 
+	outline: none;
 	padding-top: 8px;
 	display: inline-block;
 	width: 100%;
@@ -132,6 +134,7 @@ nav{
 	border-radius:5px;
 	text-decoration: none;
 	font-size: 16px;
+	padding:0;
 }
 
 /*==================Footer==================*/

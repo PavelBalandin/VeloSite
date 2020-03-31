@@ -1,0 +1,52 @@
+* {
+	padding:0;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat, sans-serif;
+	/*background: url(../img/velo2.jpg) no-repeat center top / cover;*/
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	border: solid lightgrey 1px;
+	border-radius: 5px;
+	padding:10px 10px;
+	background-color: white;
+}
+
+input{
+	margin:10px 0;
+	padding: 10px;
+	border: unset;
+	border-bottom: 2px solid #e3e3e3;
+}
+
+button{
+	padding: 10px;
+	background:#e3e3e3;
+	border: unset;
+	cursor: pointer;
+}
+
+p{
+	margin-top: 15px;
+	text-align: center;
+}
+a{
+	color: #7c9ab7;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.errormsg{
+	color: red;
+	font-size: 10px;
+}

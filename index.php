@@ -1,3 +1,6 @@
+<?php 
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +18,8 @@
 ?>
 
 <body>
-	
 	<?php require "blocks/header.php" ?>
-
+		
 	<div class="news_blocK">
 		<div class="containert2">
 			<div class="news_blocK_tile">
@@ -34,7 +36,8 @@
 					<?php 
 						$name = $result_set->fetch_assoc();
 						$img = $result_img->fetch_assoc();
-						$imna = $img["img_path"]
+						$imna = $img["img_path"];
+						$id = $name["id"];
 					 ?>
 						<div class="card">
 							  <img src="<?php echo($imna)?>" class="card-img-top" alt="...">
@@ -43,7 +46,10 @@
 							   <p class="card-text"><?php echo substr(($name["content"]),0,450). "..." ?></p>
 							   <p class="card-text-time"><?php echo ($name["date_created"]) ?></p>
 							  </div>
-							  <a href="articlepage.php" class="btn-primary"> Подробние</a>
+							  <form action="articlepage.php" method="POST">
+							  		<input class="btn-primary" type="submit" value="Подробнее" name="--">
+							  		<input type="hidden" value="<?php echo($id)?>" name="id">
+							  </form>
 						</div>
 					<?php endfor; ?>		
 				</div>
