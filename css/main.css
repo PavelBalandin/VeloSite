@@ -44,6 +44,9 @@ nav{
 	justify-content: flex-end;
 }
 
+.meny{
+	display: flex;
+}
 
 .meny li{
 	float: left;
@@ -58,6 +61,23 @@ nav{
 	font-weight: bold;
 	font-size: 16px;
 }
+
+.submenu{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.2s ease-in;
+	padding: 0;
+	margin: 0;
+}
+
+
+.submenu li{
+	margin:10px 0 0 0;
+	padding: 0;
+}
+
 
 #logotext{
 	color: white;

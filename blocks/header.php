@@ -1,11 +1,15 @@
 <?php
 	if (isset($_SESSION['user'])){		
 			$name1 =   $_SESSION['user']['login'];
+			$v = 1;
+			$loghref = "#";
 		}else{
 			$name1 = " Log in";
+			$v = 0;
+			$loghref = "login/log_in.php";
 		}
-		unset($_SESSION['user']);
 ?>
+
 <header>
 		<div class="containert1">
 			<div class="logo">
@@ -21,7 +25,12 @@
 					<li><a href="index.php">Home</a></li>
 					<li><a href="all_news.php">All News</a></li>
 			 		<li><a href="about_us.php">About US</a></li>
-					<li><a href="login/log_in.php"><img src="img/user.png" alt=""> <?php echo $name1 ?></a></li>
+			 		<li value="<?php echo($v)?>" id="mainLi"><a href="<?php echo($loghref)?>" ><img src="img/user.png" alt=""> <?php echo $name1 ?></a>
+			 		<ul class="submenu">
+						<li><a href="#">Accountn</a></li>
+						<li><a href="../phpsessionexit.php">Exit</a></li>
+					</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>

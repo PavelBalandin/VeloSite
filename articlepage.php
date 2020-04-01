@@ -8,15 +8,14 @@
 	<?php
 		$id = $_POST["id"];
 		$mysqli = new mysqli ("localhost", "root", "", "velosportua");
-			$mysqli->query ("SET NAMES 'utf8'");
-			$result_set = $mysqli->query ("SELECT * FROM `articles` where id  = $id");
-			$result_img = $mysqli->query ("SELECT * FROM `photos` where id  = $id");
-			// $result_img = $mysqli->query ("SELECT * FROM `photos`");
-			$mysqli->close ();
-
-			$name = $result_set->fetch_assoc();
-			$img = $result_img->fetch_assoc();
-			$imna = $img["img_path"];
+		
+		$mysqli->query ("SET NAMES 'utf8'");
+		$result_set = $mysqli->query ("SELECT * FROM `articles` where id  = $id");
+		$result_img = $mysqli->query ("SELECT * FROM `photos` where id  = $id");
+		$mysqli->close ();
+		$name = $result_set->fetch_assoc();
+		$img = $result_img->fetch_assoc();
+		$imna = $img["img_path"];
 	?>
 
 

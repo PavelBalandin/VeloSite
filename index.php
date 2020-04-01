@@ -1,5 +1,10 @@
 <?php 
 	session_start();
+	$mysqli = new mysqli ("localhost", "root", "", "velosportua");
+	$mysqli->query ("SET NAMES 'utf8'");
+	$result_set = $mysqli->query ("SELECT * FROM `articles`");
+	$result_img = $mysqli->query ("SELECT * FROM `photos`");
+	$mysqli->close ();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,18 +13,11 @@
 	<title>Velosport UA</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
-
-<?php
-	$mysqli = new mysqli ("localhost", "root", "", "velosportua");
-	$mysqli->query ("SET NAMES 'utf8'");
-	$result_set = $mysqli->query ("SELECT * FROM `articles`");
-	$result_img = $mysqli->query ("SELECT * FROM `photos`");
-	$mysqli->close ();
-?>
-
 <body>
-	<?php require "blocks/header.php" ?>
-		
+	<!-- Include header -->
+	<?php require "blocks/header.php" ?> 
+	
+	<!-- Main part -->	
 	<div class="news_blocK">
 		<div class="containert2">
 			<div class="news_blocK_tile">
@@ -57,7 +55,13 @@
 			</div>
 		</div>
 	</div>
-
+	
+	<!-- Include footer -->
 	<?php require "blocks/footer.php" ?>
+
+	<!-- Include Javascript -->
+	<script type="text/javascript" src="js/main.js"></script> 
 </body>
+
+
 </html>
