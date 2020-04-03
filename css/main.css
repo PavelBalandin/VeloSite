@@ -237,3 +237,35 @@ footer{
 .mainarticle .card-text p{
 	margin:0 0 10px 0;
 }
+
+/*=======================All news=======================*/
+
+.main_all_news{
+	display: flex;
+	justify-content: center;
+}
+
+.containert4{
+	margin-top: 20px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	background-color: white;
+	width: 50%;
+}
+
+.containert4 .card{
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	width: 31.6666%;
+	margin-left: 1%;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.containert4 .card img{
+	width: 100%;
+ 	height: 40%;
+  	object-fit: cover;
+  	object-position: 0 0;
+}

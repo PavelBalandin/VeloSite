@@ -29,7 +29,7 @@
 			<div class="news">
 				<div class="cards">
 					<?php
-						for($i = 0; $i < $result_set->num_rows;$i++):
+						for($i = 0; $i < 3;$i++):
 					?>
 					<?php 
 						$name = $result_set->fetch_assoc();
