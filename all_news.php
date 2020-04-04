@@ -29,7 +29,7 @@
 							  <img src="<?php echo($imna)?>" class="card-img-top" alt="...">
 							  <div class="card-body">
 							   <h5 class="card-title"><?php echo ($name["title"]) ?></h5>
-							   <p class="card-text"><?php echo substr(($name["content"]),0,100). "..." ?></p>
+							   <p class="card-text"><?php echo substr(($name["content"]),0,300). "..." ?></p>
 							   <p class="card-text-time"><?php echo ($name["date_created"]) ?></p>
 							  </div>
 							  <form action="articlepage.php" method="POST">
